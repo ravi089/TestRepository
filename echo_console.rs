@@ -36,7 +36,7 @@ fn main() {
             let stdin = tokio_stdin_stdout::stdin(0);
             let stdout = tokio_stdin_stdout::stdout(0); // .make_sendable();
 
-            // This comment is the result of merge.
+            // This comment is in branch.
             let stdin = FramedRead::new(stdin, LinesCodec::new());
             let stdout = FramedWrite::new(stdout, LinesCodec::new());
          
